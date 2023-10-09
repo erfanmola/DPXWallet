@@ -52,6 +52,24 @@ const i18n_fa = {
             },
         }
     },
+    home: {
+        balance: 'موجودی',
+        receive: 'دریافت',
+        send: 'ارسال',
+    },
+    badges: {
+        leagues: 'لیگ‌ها',
+        ranks: {
+            tier_1: 'برنز',
+            tier_2: 'نقره‌ای',
+            tier_3: 'طلایی',
+            tier_4: 'پلاتینیوم',
+            tier_5: 'الماس',
+            tier_6: 'مرموز',
+            tier_7: 'قهرمان',
+            tier_8: 'اسطوره',
+        }
+    },
 };
 
 export default i18n_fa;

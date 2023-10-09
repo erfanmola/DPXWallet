@@ -52,6 +52,24 @@ const i18n_fr = {
             },
         }
     },
+    home: {
+        balance: 'Solde',
+        receive: 'Recevoir',
+        send: 'Envoyer',
+    },
+    badges: {
+        leagues: 'Ligues',
+        ranks: {
+            tier_1: 'Bronze',
+            tier_2: 'Argent',
+            tier_3: 'Or',
+            tier_4: 'Platine',
+            tier_5: 'Diamant',
+            tier_6: 'Mystère',
+            tier_7: 'Champion',
+            tier_8: 'Légende',
+        }
+    },
 };
 
 export default i18n_fr;

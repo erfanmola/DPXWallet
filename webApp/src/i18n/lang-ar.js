@@ -52,6 +52,24 @@ const i18n_ar = {
             },
         }
     },
+    home: {
+        balance: 'الرصيد',
+        receive: 'استقبال',
+        send: 'إرسال',
+    },
+    badges: {
+        leagues: 'الدوريات',
+        ranks: {
+            tier_1: 'برونز',
+            tier_2: 'فضي',
+            tier_3: 'ذهبي',
+            tier_4: 'بلاتيني',
+            tier_5: 'الماس',
+            tier_6: 'غامض',
+            tier_7: 'بطل',
+            tier_8: 'أسطورة',
+        }
+    },
 };
 
 export default i18n_ar;

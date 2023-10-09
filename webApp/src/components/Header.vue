@@ -42,12 +42,18 @@
             order: 1;
             display: flex;
             width: 100%;
-            direction: ltr;
             gap: 1rem;
+            justify-content: flex-end;
 
             > li {
                 i {
-                    font-size: 1.5rem;
+                    font-size: 1.75rem;
+                }
+
+                &#settings-icon {
+                    flex-grow: 1;
+                    display: flex;
+                    justify-content: flex-end;
                 }
             }
         }

@@ -52,6 +52,24 @@ const i18n_tr = {
             },
         }
     },
+    home: {
+        balance: 'Bakiye',
+        receive: 'Al',
+        send: 'Gönder',
+    },
+    badges: {
+        leagues: 'Ligler',
+        ranks: {
+            tier_1: 'Bronz',
+            tier_2: 'Gümüş',
+            tier_3: 'Altın',
+            tier_4: 'Platin',
+            tier_5: 'Elmas',
+            tier_6: 'Gizem',
+            tier_7: 'Şampiyon',
+            tier_8: 'Efsane',
+        }
+    },
 };
 
 export default i18n_tr;
