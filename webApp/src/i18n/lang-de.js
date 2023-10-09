@@ -79,6 +79,41 @@ const i18n_de = {
             wallet_copied: 'Brieftaschenadresse wurde in die Zwischenablage kopiert',
         }
     },
+    transfer: {
+        title: 'Überweisung',
+        fields: {
+            departure: 'Abgangswallet',
+            destination: 'Zielwallet',
+            amount: 'Betrag',
+            transfer_amount: 'Überweisungsbetrag (DPX)'
+        },
+        request_transfer: 'Überweisung anfordern',
+        toast: {
+            success: 'Die Transaktion war erfolgreich'
+        },
+        prompt: {
+            verify_transfer: {
+                title: 'Überweisung bestätigen',
+                text: 'Sie überweisen {amount} DPX mit einer Gebühr von 0,1 DPX an {destination}. Möchten Sie fortfahren?',
+            },
+        }
+    },
+    api: {
+        errors: {
+            'invalid-credentials': 'Die bereitgestellten Anmeldedaten sind ungültig',
+            'invalid-departure': 'Abgangswallet ist ungültig',
+            'invalid-destination': 'Zielwallet ist ungültig',
+            'invalid-secret-format': 'Das Format des geheimen Satzes ist ungültig',
+            'invalid-amount': 'Betrag ist ungültig',
+            'same-departure-destination': 'Abgangs- und Zielwallet sind identisch',
+            'locked-departure': 'Abgangswallet ist gesperrt',
+            'locked-destination': 'Zielwallet ist gesperrt',
+            'invalid-wallet': 'Wallet ist ungültig',
+            'invalid-secret': 'Geheimer Satz ist ungültig',
+            'insufficient-balance': 'Guthaben ist nicht ausreichend',
+            'invalid-transaction': 'Transaktion ist ungültig',
+        }
+    },
 };
 
 export default i18n_de;

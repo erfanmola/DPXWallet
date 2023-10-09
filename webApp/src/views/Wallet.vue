@@ -65,7 +65,7 @@
         status.value = 'progress';
         WebApp.HapticFeedback.impactOccurred('medium');
 
-        let result = await Utils.DPXSendRequest('/verify', { 'wallet': wallet.value, 'secret': secret.value });
+        let result = await Utils.DPXSendRequest('/verify', { 'wallet': wallet.value, 'secret': secret.value }, 'POST', i18nLocale);
 
         if (result) {
 
@@ -144,7 +144,7 @@
                     statusRevoke.value = 'progress';
                     WebApp.HapticFeedback.impactOccurred('medium');
 
-                    let result = await Utils.DPXSendRequest('/revoke', { 'wallet': wallet.value, 'secret': secret.value });
+                    let result = await Utils.DPXSendRequest('/revoke', { 'wallet': wallet.value, 'secret': secret.value }, 'POST', i18nLocale);
 
                     if (result) {
 

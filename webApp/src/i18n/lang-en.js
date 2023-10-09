@@ -79,6 +79,41 @@ const i18n_en = {
             wallet_copied: 'Wallet address is copied to clipboard',
         }
     },
+    transfer: {
+        title: 'Transfer',
+        fields: {
+            departure: 'Departure Wallet',
+            destination: 'Destination Wallet',
+            amount: 'Amount',
+            transfer_amount: 'Transfer Amount (DPX)'
+        },
+        request_transfer: 'Request Transfer',
+        toast: {
+            success: 'Transaction was successful'
+        },
+        prompt: {
+            verify_transfer: {
+                title: 'Verify Transfer',
+                text: 'You are transfering {amount} DPX with 0.1 DPX fee to {destination}. Do you want to proceed?',
+            },
+        }
+    },
+    api: {
+        errors: {
+            'invalid-credentials': 'Provided credentials are invalid',
+            'invalid-departure': 'Departure wallet is invalid',
+            'invalid-destination': 'Destination wallet is invalid',
+            'invalid-secret-format': 'Secret phrase format is invalid',
+            'invalid-amount': 'Amount is invalid',
+            'same-departure-destination': 'Departure and Destination are same',
+            'locked-departure': 'Departure wallet is locked',
+            'locked-destination': 'Destination wallet is locked',
+            'invalid-wallet': 'Wallet is invalid',
+            'invalid-secret': 'Secret phrase is invalid',
+            'insufficient-balance': 'Balance is not sufficent',
+            'invalid-transaction': 'Transaction is invalid',
+        }
+    },
 };
 
 export default i18n_en;

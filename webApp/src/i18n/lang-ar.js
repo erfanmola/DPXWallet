@@ -79,6 +79,41 @@ const i18n_ar = {
             wallet_copied: 'تم نسخ عنوان المحفظة إلى الحافظة',
         }
     },
+    transfer: {
+        title: 'التحويل',
+        fields: {
+            departure: 'المحفظة المرسلة',
+            destination: 'المحفظة المستلمة',
+            amount: 'المبلغ',
+            transfer_amount: 'مبلغ التحويل (DPX)'
+        },
+        request_transfer: 'طلب التحويل',
+        toast: {
+            success: 'تمت العملية بنجاح'
+        },
+        prompt: {
+            verify_transfer: {
+                title: 'تأكيد التحويل',
+                text: 'أنت على وشك نقل {amount} DPX برسوم قدرها 0.1 DPX إلى {destination}. هل ترغب في المتابعة؟',
+            },
+        }
+    },
+    api: {
+        errors: {
+            'invalid-credentials': 'بيانات الاعتماد المقدمة غير صالحة',
+            'invalid-departure': 'المحفظة المرسلة غير صالحة',
+            'invalid-destination': 'المحفظة المستلمة غير صالحة',
+            'invalid-secret-format': 'صيغة العبارة السرية غير صالحة',
+            'invalid-amount': 'المبلغ غير صالح',
+            'same-departure-destination': 'المحفظة المرسلة والمستلمة هما نفسهما',
+            'locked-departure': 'المحفظة المرسلة مغلقة',
+            'locked-destination': 'المحفظة المستلمة مغلقة',
+            'invalid-wallet': 'المحفظة غير صالحة',
+            'invalid-secret': 'العبارة السرية غير صالحة',
+            'insufficient-balance': 'الرصيد غير كافي',
+            'invalid-transaction': 'العملية غير صالحة',
+        }
+    },    
 };
 
 export default i18n_ar;

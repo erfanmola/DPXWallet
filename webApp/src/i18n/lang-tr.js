@@ -79,6 +79,41 @@ const i18n_tr = {
             wallet_copied: 'Cüzdan adresi panoya kopyalandı',
         }
     },
+    transfer: {
+        title: 'Transfer',
+        fields: {
+            departure: 'Gönderen Cüzdan',
+            destination: 'Alıcı Cüzdan',
+            amount: 'Miktar',
+            transfer_amount: 'Transfer Miktarı (DPX)'
+        },
+        request_transfer: 'Transfer Talebi',
+        toast: {
+            success: 'İşlem başarıyla gerçekleştirildi'
+        },
+        prompt: {
+            verify_transfer: {
+                title: 'Transferi Onayla',
+                text: '{amount} DPX ve 0.1 DPX ücret ile {destination} adresine transfer yapmak üzeresiniz. Devam etmek istiyor musunuz?',
+            },
+        }
+    },
+    api: {
+        errors: {
+            'invalid-credentials': 'Sağlanan kimlik bilgileri geçersiz',
+            'invalid-departure': 'Gönderen cüzdan geçersiz',
+            'invalid-destination': 'Alıcı cüzdan geçersiz',
+            'invalid-secret-format': 'Gizli cümle formatı geçersiz',
+            'invalid-amount': 'Miktar geçersiz',
+            'same-departure-destination': 'Gönderen ve Alıcı aynı',
+            'locked-departure': 'Gönderen cüzdan kilitli',
+            'locked-destination': 'Alıcı cüzdan kilitli',
+            'invalid-wallet': 'Cüzdan geçersiz',
+            'invalid-secret': 'Gizli cümle geçersiz',
+            'insufficient-balance': 'Bakiye yetersiz',
+            'invalid-transaction': 'İşlem geçersiz',
+        }
+    },
 };
 
 export default i18n_tr;

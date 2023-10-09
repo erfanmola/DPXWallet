@@ -6,6 +6,7 @@ import LoginView from '../views/Login.vue';
 import WalletView from '../views/Wallet.vue';
 import BadgesView from '../views/Badges.vue';
 import ReceiveView from '../views/Receive.vue';
+import TransferView from '../views/Transfer.vue';
 
 const routes = [
     { 
@@ -42,6 +43,11 @@ const routes = [
         path: '/receive',
         name: 'receive',
         component: ReceiveView,
+    },
+    {
+        path: '/transfer/:destination([a-f0-9]{32})?/:amount?',
+        name: 'transfer',
+        component: TransferView,
     },
 ];
 

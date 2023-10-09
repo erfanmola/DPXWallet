@@ -9,7 +9,7 @@ const Utils = {
         Toastify({text: text, duration: duration, gravity: 'top', position: 'left', style: {background: 'var(--tg-theme-text-color)', color: 'var(--tg-theme-bg-color)'}}).showToast(); 
     },
 
-    DPXSendRequest: async (endpoint = '/', data = [], method = 'POST') => {
+    DPXSendRequest: async (endpoint = '/', data = [], method = 'POST', i18n = null) => {
 
         const FD = new FormData();
 
@@ -45,7 +45,16 @@ const Utils = {
 
             if ('info' in result) {
 
-                Utils.Toast(result.info);
+                if (i18n) {
+
+                    Utils.Toast(i18n.t(`api.errors.${ result.error }`));
+
+                }else{
+                
+                    Utils.Toast(result.info);
+
+                }
+                
 
             }else{
 

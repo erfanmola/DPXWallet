@@ -79,6 +79,41 @@ const i18n_fr = {
             wallet_copied: 'Adresse du portefeuille copiée dans le presse-papiers',
         }
     },
+    transfer: {
+        title: 'Transfert',
+        fields: {
+            departure: 'Portefeuille de Départ',
+            destination: 'Portefeuille de Destination',
+            amount: 'Montant',
+            transfer_amount: 'Montant du Transfert (DPX)'
+        },
+        request_transfer: 'Demander le Transfert',
+        toast: {
+            success: 'La transaction a réussi'
+        },
+        prompt: {
+            verify_transfer: {
+                title: 'Vérifier le Transfert',
+                text: 'Vous transférez {amount} DPX avec des frais de 0,1 DPX vers {destination}. Voulez-vous continuer ?',
+            },
+        }
+    },
+    api: {
+        errors: {
+            'invalid-credentials': 'Les identifiants fournis ne sont pas valides',
+            'invalid-departure': 'Le portefeuille de départ n\'est pas valide',
+            'invalid-destination': 'Le portefeuille de destination n\'est pas valide',
+            'invalid-secret-format': 'Le format de la phrase secrète n\'est pas valide',
+            'invalid-amount': 'Le montant n\'est pas valide',
+            'same-departure-destination': 'Le portefeuille de départ et de destination sont identiques',
+            'locked-departure': 'Le portefeuille de départ est verrouillé',
+            'locked-destination': 'Le portefeuille de destination est verrouillé',
+            'invalid-wallet': 'Le portefeuille n\'est pas valide',
+            'invalid-secret': 'La phrase secrète n\'est pas valide',
+            'insufficient-balance': 'Le solde n\'est pas suffisant',
+            'invalid-transaction': 'La transaction n\'est pas valide',
+        }
+    },
 };
 
 export default i18n_fr;

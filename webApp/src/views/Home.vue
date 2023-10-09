@@ -54,7 +54,7 @@
 
     onMounted(async () => {
 
-        let data = await Utils.DPXSendRequest(`/balance/${ wallet.value }`, [], 'GET');
+        let data = await Utils.DPXSendRequest(`/balance/${ wallet.value }`, [], 'GET', i18nLocale);
 
         if (data && `result` in data && data.status === 'success') {
 

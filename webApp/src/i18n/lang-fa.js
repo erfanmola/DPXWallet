@@ -79,6 +79,41 @@ const i18n_fa = {
             wallet_copied: 'آدرس کیف پول به کلیپ‌بورد کپی شد',
         }
     },
+    transfer: {
+        title: 'انتقال',
+        fields: {
+            departure: 'کیف پول مبدا',
+            destination: 'کیف پول مقصد',
+            amount: 'مقدار',
+            transfer_amount: 'مقدار انتقالی (DPX)'
+        },
+        request_transfer: 'درخواست انتقال',
+        toast: {
+            success: 'تراکنش با موفقیت انجام شد'
+        },
+        prompt: {
+            verify_transfer: {
+                title: 'تأیید انتقال',
+                text: 'شما در حال انتقال {amount} DPX با کارمزد 0.1 DPX به {destination} هستید. آیا می‌خواهید ادامه دهید؟',
+            },
+        }
+    },
+    api: {
+        errors: {
+            'invalid-credentials': 'اطلاعات ورودی نامعتبر هستند',
+            'invalid-departure': 'کیف پول مبدا نامعتبر است',
+            'invalid-destination': 'کیف پول مقصد نامعتبر است',
+            'invalid-secret-format': 'فرمت عبارت محرمانه نامعتبر است',
+            'invalid-amount': 'مقدار نامعتبر است',
+            'same-departure-destination': 'کیف پول مبدا و مقصد یکسان هستند',
+            'locked-departure': 'کیف پول مبدا قفل شده است',
+            'locked-destination': 'کیف پول مقصد قفل شده است',
+            'invalid-wallet': 'کیف پول نامعتبر است',
+            'invalid-secret': 'عبارت محرمانه نامعتبر است',
+            'insufficient-balance': 'موجودی کافی نیست',
+            'invalid-transaction': 'تراکنش نامعتبر است',
+        }
+    },
 };
 
 export default i18n_fa;
