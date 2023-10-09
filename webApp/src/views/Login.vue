@@ -3,6 +3,8 @@
     import { useRouter } from 'vue-router';
     import { useI18n } from "vue-i18n";
 
+    import WebApp from '@twa-dev/sdk';
+
     import CreditIcon from '../assets/images/credit.svg';
 
     const router = useRouter();
@@ -11,6 +13,8 @@
     
     // Set i18n locale based on the user's locale provided by <LocaleProvider>
     i18nLocale.locale.value = localStorage.getItem('dpxwallet_locale') || inject('locale', 'en');
+
+    WebApp.BackButton.hide();
 </script>
 
 <template>

@@ -12,7 +12,6 @@
     // Set i18n locale
     i18nLocale.locale.value = locale.value;
 
-
     watch(locale, () => {
         localStorage.setItem('dpxwallet_locale', locale.value);
         window.location.reload();
@@ -20,7 +19,6 @@
 
     const router = useRouter();
 
-    WebApp.setHeaderColor('secondary_bg_color');
     WebApp.BackButton.onClick(() => { router.push('/'); });
     WebApp.BackButton.show();
 </script>
