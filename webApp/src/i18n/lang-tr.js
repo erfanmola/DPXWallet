@@ -114,6 +114,25 @@ const i18n_tr = {
             'invalid-transaction': 'İşlem geçersiz',
         }
     },
+    transactions: {
+        title: 'İşlemler',
+        transaction: 'İşlem',
+        sent: 'Gönderildi',
+        received: 'Alındı',
+        no_transactions: 'Hiç işlem bulunamadı'
+    },    
+    transaction: {
+        title: 'İşlem',
+        info: 'Detaylar',
+        fields: {
+            id: 'Kimlik',
+            departure: 'Gönderen',
+            destination: 'Alıcı',
+            amount: 'Miktar',
+            fee: 'Ücret',
+            date: 'Tarih',
+        }
+    },    
 };
 
 export default i18n_tr;

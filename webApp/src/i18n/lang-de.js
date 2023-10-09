@@ -114,6 +114,25 @@ const i18n_de = {
             'invalid-transaction': 'Transaktion ist ungültig',
         }
     },
+    transactions: {
+        title: 'Transaktionen',
+        transaction: 'Transaktion',
+        sent: 'Gesendet',
+        received: 'Empfangen',
+        no_transactions: 'Keine Transaktionen gefunden'
+    },    
+    transaction: {
+        title: 'Transaktion',
+        info: 'Details',
+        fields: {
+            id: 'ID',
+            departure: 'Absender',
+            destination: 'Empfänger',
+            amount: 'Betrag',
+            fee: 'Gebühr',
+            date: 'Datum',
+        }
+    },    
 };
 
 export default i18n_de;

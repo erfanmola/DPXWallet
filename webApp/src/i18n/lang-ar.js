@@ -113,6 +113,25 @@ const i18n_ar = {
             'insufficient-balance': 'الرصيد غير كافي',
             'invalid-transaction': 'العملية غير صالحة',
         }
+    },
+    transactions: {
+        title: 'المعاملات',
+        transaction: 'المعاملة',
+        sent: 'تم الإرسال',
+        received: 'تم الاستلام',
+        no_transactions: 'لم يتم العثور على أي معاملات'
+    },
+    transaction: {
+        title: 'المعاملة',
+        info: 'التفاصيل',
+        fields: {
+            id: 'المعرف',
+            departure: 'المرسل',
+            destination: 'المستلم',
+            amount: 'المبلغ',
+            fee: 'الرسوم',
+            date: 'التاريخ',
+        }
     },    
 };
 

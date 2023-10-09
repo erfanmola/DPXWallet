@@ -114,6 +114,25 @@ const i18n_fa = {
             'invalid-transaction': 'تراکنش نامعتبر است',
         }
     },
+    transactions: {
+        title: 'تراکنش‌ها',
+        transaction: 'تراکنش',
+        sent: 'ارسال شد',
+        received: 'دریافت شد',
+        no_transactions: 'تراکنشی یافت نشد'
+    },    
+    transaction: {
+        title: 'تراکنش',
+        info: 'جزئیات',
+        fields: {
+            id: 'شناسه',
+            departure: 'مبدأ',
+            destination: 'مقصد',
+            amount: 'مقدار',
+            fee: 'کارمزد',
+            date: 'تاریخ',
+        }
+    },
 };
 
 export default i18n_fa;
