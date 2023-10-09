@@ -44,6 +44,10 @@
 
 <style lang="scss">
 
+    #container-settings {
+        padding: 0 !important;
+    }
+
     #language-list {
         display: flex;
         flex-direction: column;

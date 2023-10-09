@@ -221,52 +221,6 @@ select, select option {
     color: var(--tg-theme-text-color);
 }
 
-.slide-left-enter-active,
-.slide-left-leave-active {
-    transition: all 0.15s ease-out;
-}
-.slide-left-enter-to {
-    position: absolute;
-    right: 0;
-    opacity: 1;
-}
-.slide-left-enter-from {
-    position: absolute;
-    right: -100%;
-    opacity: 0.25;
-}
-.slide-left-leave-to {
-    position: absolute;
-    left: -100%;
-}
-.slide-left-leave-from {
-    position: absolute;
-    left: 0;
-}
-
-.slide-right-enter-active,
-.slide-right-leave-active {
-    transition: all 0.15s ease-out;
-}
-.slide-right-enter-to {
-    position: absolute;
-    left: 0;
-    opacity: 1;
-}
-.slide-right-enter-from {
-    position: absolute;
-    left: -100%;
-    opacity: 0.25;
-}
-.slide-right-leave-to {
-    position: absolute;
-    right: -100%;
-}
-.slide-right-leave-from {
-    position: absolute;
-    right: 0;
-}
-
 .main-wrapper {
     display: block;
     width: 100%;

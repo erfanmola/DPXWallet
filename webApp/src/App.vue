@@ -53,11 +53,7 @@
             <!-- LocaleProvider: https://erfanmola.github.io/TeleVue/?path=/docs/providers-localeprovider--docs -->
             <LocaleProvider :locale="locale">
                 <!-- Vue Router -->
-                <router-view v-slot="{ Component, route }">
-                    <transition :name="slideTransition">
-                        <component :is="Component" class="main-wrapper" />
-                    </transition>
-                </router-view>
+                <router-view class="main-wrapper"></router-view>
             </LocaleProvider>
         </AppearanceProvider>
 
