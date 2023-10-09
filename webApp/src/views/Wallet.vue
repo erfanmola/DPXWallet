@@ -105,7 +105,7 @@
 
         document.querySelector("#container-clear button").classList.remove('normal');
 
-        Utils.Prompt(i18nLocale.t('wallet.prompt.clear_session.title'), i18nLocale.t('wallet.prompt.clear_session.title'), [
+        Utils.Prompt(i18nLocale.t('wallet.prompt.clear_session.title'), i18nLocale.t('wallet.prompt.clear_session.text'), [
             {
                 text: i18nLocale.t('general.no'),
                 type: "default",

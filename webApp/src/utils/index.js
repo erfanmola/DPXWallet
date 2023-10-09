@@ -49,7 +49,7 @@ const Utils = {
 
             }else{
 
-                Utils.Toast("متاسفانه خطایی رخ داد");
+                Utils.Toast("Error");
 
             }
 
@@ -126,7 +126,7 @@ const Utils = {
 
         }else{
 
-            Utils.Toast('نسخه تلگرام شما از این قابلیت پشتیبانی نمی‌کند');
+            Utils.Toast('Unsupported');
 
         }
 
@@ -157,7 +157,7 @@ const Utils = {
 
         }else{
 
-            Utils.Toast('نسخه تلگرام شما از این قابلیت پشتیبانی نمی‌کند');
+            Utils.Toast('Unsupported');
 
         }
 
@@ -171,7 +171,7 @@ const Utils = {
 
         }else{
 
-            Utils.Toast('نسخه تلگرام شما از این قابلیت پشتیبانی نمی‌کند');
+            Utils.Toast('Unsupported');
 
         }
 
