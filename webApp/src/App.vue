@@ -1,4 +1,11 @@
 <script setup>
+    import { ref, onMounted } from 'vue';
+    import { useRouter } from 'vue-router';
+
+    import WebApp from '@twa-dev/sdk';
+
+    import Utils from './utils';
+
     // Read More: https://erfanmola.github.io/TeleVue/?path=/docs/introduction--docs#usage
     import { AppearanceProvider, LocaleProvider, AuthProvider } from '@erfanmola/televue';
     import '@erfanmola/televue/style.css';
@@ -10,7 +17,31 @@
     const hex_hmac_signature = import.meta.env.VITE_HEX_HMAC_SIGNATURE;
 
     // Try to retrieve the saved `locale` from LocalStorage if available
-    const locale = localStorage.getItem('locale');
+    const locale = localStorage.getItem('dpxwallet_locale');
+
+    const slideTransition = ref('slide-left');
+
+    const router = useRouter();
+
+    onMounted(() => {
+
+        Utils.PreLoadAudio('Success.mp3');
+        Utils.PreLoadAudio('Failed.mp3');
+
+    });
+
+    router.afterEach((to, from) => {
+
+        const toPath = to.path.split('/').filter((item) => item.length).length;
+        const fromPath = from.path.split('/').filter((item) => item.length).length;
+
+        slideTransition.value = (toPath) < (fromPath) ? 'slide-right' : 'slide-left';
+
+    });
+
+    WebApp.setHeaderColor('secondary_bg_color');
+    WebApp.setBackgroundColor('secondary_bg_color');
+    WebApp.expand();
 </script>
 
 <template>
@@ -18,11 +49,15 @@
     <!-- AuthProvider: https://erfanmola.github.io/TeleVue/?path=/docs/providers-authprovider--docs -->
     <component :is="hex_hmac_signature ? AuthProvider : 'div'" :hex_hmac_signature="hex_hmac_signature">
         <!-- AppearanceProvider: https://erfanmola.github.io/TeleVue/?path=/docs/providers-appearanceprovider--docs -->
-        <AppearanceProvider>
+        <AppearanceProvider :provideFonts="false">
             <!-- LocaleProvider: https://erfanmola.github.io/TeleVue/?path=/docs/providers-localeprovider--docs -->
             <LocaleProvider :locale="locale">
                 <!-- Vue Router -->
-                <router-view></router-view>
+                <router-view v-slot="{ Component, route }">
+                    <transition :name="slideTransition">
+                        <component :is="Component" class="main-wrapper" />
+                    </transition>
+                </router-view>
             </LocaleProvider>
         </AppearanceProvider>
 
@@ -53,7 +88,7 @@
 <style lang="scss">
 
     body {
-        background-color: var(--tg-theme-bg-color);
+        background-color: var(--tg-theme-secondary-bg-color);
         color: var(--tg-theme-text-color);
     }
 

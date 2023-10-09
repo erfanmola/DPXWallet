@@ -4,6 +4,8 @@ import { createI18n } from 'vue-i18n';
 import App from './App.vue';
 import router from './router';
 
+import './scss/app.scss';
+
 // Import i18n locales
 import i18n_en from './i18n/lang-en';
 import i18n_fa from './i18n/lang-fa';

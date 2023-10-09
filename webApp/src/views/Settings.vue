@@ -7,14 +7,14 @@
     import { List, Section, RadioButton } from '@erfanmola/televue';
 
     const i18nLocale = useI18n({ useScope: 'global' });
-    const locale = ref(localStorage.getItem('locale') || inject('locale', 'en'));
+    const locale = ref(localStorage.getItem('dpxwallet_locale') || inject('locale', 'en'));
 
     // Set i18n locale
     i18nLocale.locale.value = locale.value;
 
 
     watch(locale, () => {
-        localStorage.setItem('locale', locale.value);
+        localStorage.setItem('dpxwallet_locale', locale.value);
         window.location.reload();
     });
 

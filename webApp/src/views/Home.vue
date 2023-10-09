@@ -1,16 +1,25 @@
 <script setup>
-    import { computed, ref, onMounted, watch, inject, nextTick, onUnmounted } from 'vue';
+    import { inject } from 'vue';
     import { useI18n } from "vue-i18n";
+    import { useRouter } from 'vue-router';
 
     import WebApp from '@twa-dev/sdk';
-    import { List, Checkbox } from '@erfanmola/televue';
+
+    import Utils from '../utils';
+
+    // If user has no saved wallet, redirect to login
+    if (!(Utils.GetWallet('wallet'))) {
+
+        const router = useRouter();
+        router.push('/login');
+
+    }
 
     const i18nLocale = useI18n({ useScope: 'global' });
     
     // Set i18n locale based on the user's locale provided by <LocaleProvider>
-    i18nLocale.locale.value = localStorage.getItem('locale') || inject('locale', 'en');
+    i18nLocale.locale.value = localStorage.getItem('dpxwallet_locale') || inject('locale', 'en');
 
-    WebApp.setHeaderColor('secondary_bg_color');
     WebApp.BackButton.hide();
 </script>
 
@@ -24,11 +33,6 @@
 
     body {
         background-color: var(--tg-theme-secondary-bg-color);
-    }
-
-    #container-home {
-        display: flex;
-        flex-direction: column;
     }
 
     .no-select {
