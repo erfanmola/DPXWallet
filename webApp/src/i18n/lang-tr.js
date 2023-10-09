@@ -70,6 +70,15 @@ const i18n_tr = {
             tier_8: 'Efsane',
         }
     },
+    receive: {
+        set: 'Ayarla',
+        amount: 'Miktar (İsteğe Bağlı)',
+        receive_amount: 'Alınan Miktar (DPX)',
+        hint: 'Adrese tıklayarak cüzdan adresinizi kopyalayabilir ve paylaşabilirsiniz. Ayrıca cüzdan QR kodunuzu da paylaşabilirsiniz.',
+        toast: {
+            wallet_copied: 'Cüzdan adresi panoya kopyalandı',
+        }
+    },
 };
 
 export default i18n_tr;

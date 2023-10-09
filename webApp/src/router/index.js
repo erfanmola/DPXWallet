@@ -5,6 +5,7 @@ import SettingsView from '../views/Settings.vue';
 import LoginView from '../views/Login.vue';
 import WalletView from '../views/Wallet.vue';
 import BadgesView from '../views/Badges.vue';
+import ReceiveView from '../views/Receive.vue';
 
 const routes = [
     { 
@@ -36,6 +37,11 @@ const routes = [
         path: '/badges',
         name: 'badges',
         component: BadgesView,
+    },
+    {
+        path: '/receive',
+        name: 'receive',
+        component: ReceiveView,
     },
 ];
 

@@ -70,6 +70,15 @@ const i18n_fr = {
             tier_8: 'Légende',
         }
     },
+    receive: {
+        set: 'Définir',
+        amount: 'Montant (Optionnel)',
+        receive_amount: 'Montant Reçu (DPX)',
+        hint: 'Vous pouvez copier et partager votre adresse de portefeuille en cliquant sur l\'adresse. Vous pouvez également partager votre QR Code de portefeuille.',
+        toast: {
+            wallet_copied: 'Adresse du portefeuille copiée dans le presse-papiers',
+        }
+    },
 };
 
 export default i18n_fr;

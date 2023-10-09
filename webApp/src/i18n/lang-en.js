@@ -70,6 +70,15 @@ const i18n_en = {
             tier_8: 'Legend',
         }
     },
+    receive: {
+        set: 'Set',
+        amount: 'Amount (Optional)',
+        receive_amount: 'Receive Amount (DPX)',
+        hint: 'You can copy and share your wallet address by clicking on the address. You can also share your wallet QRCode.',
+        toast: {
+            wallet_copied: 'Wallet address is copied to clipboard',
+        }
+    },
 };
 
 export default i18n_en;

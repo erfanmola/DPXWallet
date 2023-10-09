@@ -70,6 +70,15 @@ const i18n_de = {
             tier_8: 'Legende',
         }
     },
+    receive: {
+        set: 'Einstellen',
+        amount: 'Betrag (Optional)',
+        receive_amount: 'Erhaltener Betrag (DPX)',
+        hint: 'Sie können Ihre Brieftaschenadresse kopieren und teilen, indem Sie auf die Adresse klicken. Sie können auch Ihren Brieftaschen-QR-Code teilen.',
+        toast: {
+            wallet_copied: 'Brieftaschenadresse wurde in die Zwischenablage kopiert',
+        }
+    },
 };
 
 export default i18n_de;

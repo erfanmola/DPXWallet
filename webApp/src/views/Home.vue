@@ -106,7 +106,7 @@
                 </ul>
             </div>
 
-            <p class="w600-dots-1" style="direction: ltr;"><span class="w500-dots-1">{{ (currency === 'dpx' ? (balance).toLocaleString() : (balance * 1000).toLocaleString())}}</span> {{ currencies[currency] }}</p>
+            <p class="w600-dots-1" style="direction: ltr;"><span class="w500-dots-1">{{ (currency === 'dpx' ? (balance).toLocaleString() : (balance * 3.1415).toLocaleString())}}</span> {{ currencies[currency] }}</p>
         </div>
 
         <div id="container-actions">
