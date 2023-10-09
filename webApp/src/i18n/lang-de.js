@@ -11,6 +11,9 @@ const i18n_de = {
         buttons: {
             import: "Brieftasche importieren",
             create: "Brieftasche erstellen"
+        },
+        toast: {
+            wallet_created: 'Brieftasche erfolgreich erstellt'
         }
     },
     settings: {

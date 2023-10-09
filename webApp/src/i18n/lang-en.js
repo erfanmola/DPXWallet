@@ -11,7 +11,10 @@ const i18n_en = {
         buttons: {
             import: "Import Wallet",
             create: "Create Wallet"
-        }
+        },
+        toast: {
+            wallet_created: 'Wallet created successfully'
+        },
     },
     settings: {
         language: {

@@ -1,9 +1,11 @@
 <script setup>
-    import { inject } from 'vue';
+    import { inject, ref } from 'vue';
     import { useRouter } from 'vue-router';
     import { useI18n } from "vue-i18n";
 
     import WebApp from '@twa-dev/sdk';
+
+    import Utils from '../utils';
 
     import CreditIcon from '../assets/images/credit.svg';
 
@@ -13,6 +15,49 @@
     
     // Set i18n locale based on the user's locale provided by <LocaleProvider>
     i18nLocale.locale.value = localStorage.getItem('dpxwallet_locale') || inject('locale', 'en');
+
+    const creating_wallet = ref(false);
+
+    const createWallet = async () => {
+
+        if (!(creating_wallet.value)) {
+
+            creating_wallet.value = true;
+
+            WebApp.HapticFeedback.impactOccurred('medium');
+
+            let result = await Utils.DPXSendRequest('/generate', {}, 'POST', i18nLocale);
+
+            if (result) {
+
+                WebApp.HapticFeedback.notificationOccurred('success');
+
+                Utils.PlayAudio('Success.mp3');
+
+                Utils.SetWallet(result.result.wallet.toString().toLowerCase(), result.result.secret.toString().toLowerCase());
+
+                Utils.Toast(i18nLocale.t('login.toast.wallet_created'));
+
+                setTimeout(() => { router.push('/'); }, 2000);
+
+            } else {
+
+                WebApp.HapticFeedback.notificationOccurred('error');
+
+                Utils.PlayAudio('Failed.mp3');
+
+            }
+
+        }
+
+    };
+
+    // If user has wallet, redirect to home
+    if (Utils.GetWallet('wallet')) {
+
+        router.push('/');
+
+    }
 
     WebApp.BackButton.hide();
 </script>
@@ -43,7 +88,7 @@
 
         <ul>
             <li @click="router.push('/wallet/import')" class="w550-dots-1 button">{{ $t('login.buttons.import') }}</li>
-            <li @click="router.push('/wallet/create')" class="w550-dots-1 button secondary">{{ $t('login.buttons.create') }}</li>
+            <li @click="createWallet" class="w550-dots-1 button secondary">{{ $t('login.buttons.create') }}</li>
         </ul>
     </section>
 </template>

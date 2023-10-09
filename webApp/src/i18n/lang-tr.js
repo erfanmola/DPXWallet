@@ -11,6 +11,9 @@ const i18n_tr = {
         buttons: {
             import: "Cüzdanı İçe Aktar",
             create: "Cüzdan Oluştur"
+        },
+        toast: {
+            wallet_created: 'Cüzdan başarıyla oluşturuldu'
         }
     },
     settings: {

@@ -11,6 +11,9 @@ const i18n_fr = {
         buttons: {
             import: "Importer le portefeuille",
             create: "Créer un portefeuille"
+        },
+        toast: {
+            wallet_created: 'Portefeuille créé avec succès'
         }
     },
     settings: {

@@ -54,12 +54,16 @@
 
     onMounted(async () => {
 
-        let data = await Utils.DPXSendRequest(`/balance/${ wallet.value }`, [], 'GET', i18nLocale);
+        if (wallet.value) {
 
-        if (data && `result` in data && data.status === 'success') {
+            let data = await Utils.DPXSendRequest(`/balance/${ wallet.value }`, [], 'GET', i18nLocale);
 
-            balance.value = data.result;
-            rank.value    = ranks.data.filter((item) => (item.min <= balance.value)).slice(-1)[0];
+            if (data && `result` in data && data.status === 'success') {
+
+                balance.value = data.result;
+                rank.value    = ranks.data.filter((item) => (item.min <= balance.value)).slice(-1)[0];
+
+            }
 
         }
 

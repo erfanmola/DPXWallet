@@ -11,6 +11,9 @@ const i18n_ar = {
         buttons: {
             import: "استيراد المحفظة",
             create: "إنشاء محفظة"
+        },
+        toast: {
+            wallet_created: 'تم إنشاء المحفظة بنجاح'
         }
     },
     settings: {

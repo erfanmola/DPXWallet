@@ -11,6 +11,9 @@ const i18n_fa = {
         buttons: {
             import: 'وارد کردن کیف پول',
             create: 'ایجاد کیف پول',
+        },
+        toast: {
+            wallet_created: 'کیف پول با موفقیت ایجاد شد'
         }
     },
     settings: {
