@@ -7,6 +7,8 @@ import WalletView from '../views/Wallet.vue';
 import BadgesView from '../views/Badges.vue';
 import ReceiveView from '../views/Receive.vue';
 import TransferView from '../views/Transfer.vue';
+import TransactionsView from '../views/Transactions.vue';
+import TransactionView from '../views/Transaction.vue';
 
 const routes = [
     { 
@@ -48,6 +50,16 @@ const routes = [
         path: '/transfer/:destination([a-f0-9]{32})?/:amount?',
         name: 'transfer',
         component: TransferView,
+    },
+    {
+        path: '/transactions',
+        name: 'transactions',
+        component: TransactionsView,
+    },
+    {
+        path: '/transaction/:id',
+        name: 'transaction',
+        component: TransactionView,
     },
 ];
 

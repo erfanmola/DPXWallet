@@ -61,24 +61,6 @@
             Your client is not authorized, please use this WebApp from a valid Telegram Client
         </template>
     </component>
-
-    <!-- Include liriliri/eruda developer console if we are in Development Mode -->
-    <teleport to="head" v-if="devMode">
-        <component is="script" v-if="devMode" src="node_modules/eruda/eruda.js"></component>
-        
-        <component is="script" v-if="devMode">
-            let timer = setInterval(() => {
-
-                if (typeof eruda === 'object') {
-
-                    clearInterval(timer);
-                    eruda.init();
-
-                }
-
-            }, 250);
-        </component>
-    </teleport>
 </template>
 
 <style lang="scss">
