@@ -1,0 +1,18 @@
+:root {
+    color-scheme: light dark;
+    --shimmer-static-bg: #DDDBDD;
+    --stroke-color: #000000;
+    --success-green: #4CAF50;
+    --failed-red: #F44336;
+    --button-danger: #F44336;
+    --border-red: rgba(244, 67, 54, 0.5);
+    --border-green: rgba(76, 175, 80, 0.5);
+}
+
+body.dark {
+    --shimmer-static-bg: #253030;
+    --stroke-color: white;
+    --success-green: #4CAF50;
+    --failed-red: #F44336;
+    --button-danger: #F44336;
+}

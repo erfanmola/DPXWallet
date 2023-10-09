@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "DPXWalletIRANYekanX";
+    src: url('../assets/fonts/IRANYekanX/woff2/IRANYekanXVF.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@for $i from 1 through 19 {
+
+    @for $j from 1 to 6 {
+
+        .w#{$i * 50}-dots-#{$j} {
+            font-weight: #{$i * 50};
+            font-variation-settings: "wght" #{$i * 50}, "dots" #{$j};
+        }
+
+    }
+
+}
+
+@font-face {
+    font-family: 'DPXWalletIconFonts';
+    src:  url('../assets/fonts/IconFont/icomoon.eot?6ioq8g');
+    src:  url('../assets/fonts/IconFont/icomoon.eot?6ioq8g#iefix') format('embedded-opentype'),
+          url('../assets/fonts/IconFont/icomoon.ttf?6ioq8g') format('truetype'),
+          url('../assets/fonts/IconFont/icomoon.woff?6ioq8g') format('woff'),
+          url('../assets/fonts/IconFont/icomoon.svg?6ioq8g#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'DPXWalletIconFonts' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@import "icomoon";
