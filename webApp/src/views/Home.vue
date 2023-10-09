@@ -25,7 +25,7 @@
 
 <template>
     <div id="container-home">
-
+        Profile Page
     </div>
 </template>
 

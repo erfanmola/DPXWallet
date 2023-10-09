@@ -78,12 +78,12 @@
 
             if (route.name === 'wallet') {
 
-                Utils.Toast(i18nLocale.t('wallet.wallet_saved'));
+                Utils.Toast(i18nLocale.t('wallet.toast.wallet_saved'));
                 setTimeout(() => { status.value = 'normal' }, 2000);
 
             } else {
 
-                Utils.Toast(i18nLocale.t('wallet.wallet_imported'));
+                Utils.Toast(i18nLocale.t('wallet.toast.wallet_imported'));
                 setTimeout(() => { router.push('/'); }, 2000);
 
             }
@@ -153,7 +153,7 @@
                         statusRevoke.value = 'success';
                         Utils.PlayAudio('Success.mp3');
 
-                        Utils.Toast(i18nLocale.t('wallet.secret_revoked'), 5000);
+                        Utils.Toast(i18nLocale.t('wallet.toast.secret_revoked'), 5000);
 
                         secret.value = result.result;
 

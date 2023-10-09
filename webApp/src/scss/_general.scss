@@ -262,11 +262,25 @@ select, select option {
         > i {
             position: absolute;
             top: 50%;
-            left: 0.5rem;
+            left: auto;
+            right: 0.5rem;
             transform: translateY(-50%);
             font-size: 1.25rem;
             padding: 1rem 0.5rem;
             cursor: pointer;
+
+            &:nth-of-type(2) {
+                transform: translateX(-100%) translateY(-50%);
+            }
+        }
+    }
+}
+
+body.rtl .form-item {
+    > div {
+        > i {
+            left: 0.5rem;
+            right: auto;
 
             &:nth-of-type(2) {
                 transform: translateX(100%) translateY(-50%);
