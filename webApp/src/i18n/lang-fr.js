@@ -1,7 +1,9 @@
 const i18n_fr = {
     general: {
         title: 'Portefeuille DPX',
-        language: 'Français'
+        language: 'Français',
+        yes: 'Oui',
+        no: 'Non',
     },
     login: {
         title: "Bienvenue sur DPX Wallet",
@@ -17,6 +19,38 @@ const i18n_fr = {
             description: 'Définissez votre langue préférée',
         },
         copyright: 'Développé par Erfan Mola en utilisant TeleVue',
+    },
+    wallet: {
+        title: {
+            wallet: 'Portefeuille',
+            import: 'Importer le Portefeuille',
+        },
+        fields: {
+            wallet: 'Adresse du Portefeuille',
+            secret: 'Phrase Secrète',
+        },
+        import_wallet: 'Importer le Portefeuille',
+        save_wallet: 'Enregistrer le Portefeuille',
+        hint: 'Dans cette section, vous pouvez entrer les informations de votre portefeuille. L\'adresse du portefeuille et la phrase secrète sont toutes deux composées de 32 caractères. Vous pouvez les scanner si vous avez des codes QR.',
+        revoke_secret: 'Révoquer la Phrase Secrète',
+        clear_session: 'Effacer le Portefeuille de cet Appareil',
+        scan_wallet: 'Scanner l\'Adresse QR du Portefeuille',
+        scan_secret: 'Scanner la Valeur QR de la Phrase Secrète',
+        toast: {
+            wallet_saved: 'Portefeuille enregistré avec succès',
+            wallet_imported: 'Portefeuille importé avec succès',
+            secret_revoked: 'Phrase secrète révoquée avec succès et enregistrée',
+        },
+        prompt: {
+            revoke_secret: {
+                title: 'Révoquer la Phrase Secrète',
+                text: 'Voulez-vous révoquer la phrase secrète de votre portefeuille?',
+            },
+            clear_session: {
+                title: 'Effacer le Portefeuille',
+                text: 'Voulez-vous effacer ce portefeuille de votre appareil?',
+            },
+        }
     },
 };
 
