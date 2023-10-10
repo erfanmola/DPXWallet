@@ -63,6 +63,11 @@
                 balance.value = data.result;
                 rank.value    = ranks.data.filter((item) => (item.min <= balance.value)).slice(-1)[0];
 
+            }else{
+
+                window.localStorage.removeItem(`wallet_user_${WebApp.initDataUnsafe.user.id}`);
+                window.location.reload();
+
             }
 
         }
