@@ -1,5 +1,5 @@
 <script setup>
-    import { ref, watch } from 'vue';
+    import { ref, watch, inject } from 'vue';
     import { useRoute, useRouter } from 'vue-router';
     import Header from '../components/Header.vue';
     import Utils from '../utils';
