@@ -10,6 +10,7 @@ You can access the DPXWallet WebApp in Telegram using [@DPXWalletBot](https://t.
 DPXWallet has a comprehensive [Documentation](https://erfanmola.github.io/DPXWallet/), addressing multiple aspects of the technical development. We recommend you to start from there.
 
 ### Introduction
+- [Introduction](https://erfanmola.github.io/DPXWallet/introduction.html)
 - [Getting Started](https://erfanmola.github.io/DPXWallet/getting-started.html)
 - [Technologies Used](https://erfanmola.github.io/DPXWallet/technologies-used.html)
 
