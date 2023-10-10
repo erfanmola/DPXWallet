@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
-    "sass": "^1.69.0",
+    "sass": "^1.69.1",
     "vite": "^4.4.11",
     "vite-svg-loader": "^4.0.0"
   }
