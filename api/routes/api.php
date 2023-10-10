@@ -1,19 +1,13 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\API;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/balance/{wallet}', [ API::class, 'Balance'      ])->where([ 'wallet' => config('regex.md5') ]);
+Route::get('/transaction/{id}', [ API::class, 'Transaction'  ])->where([ 'id' => config('regex.md5') ]);
+Route::any('/transactions',     [ API::class, 'Transactions' ]);
+Route::post('/transfer',        [ API::class, 'Transfer'     ]);
+Route::post('/verify',          [ API::class, 'Verify'       ])->middleware('throttle:4,1');
+Route::post('/revoke',          [ API::class, 'Revoke'       ])->middleware('throttle:1,1');
+Route::post('/generate',        [ API::class, 'Generate'     ])->middleware('throttle:1,1');
+Route::get('/{any}',            [ API::class, 'Invalid'      ])->where([ 'any' => '.*' ]);
