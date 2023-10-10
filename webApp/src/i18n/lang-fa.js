@@ -97,7 +97,7 @@ const i18n_fa = {
         prompt: {
             verify_transfer: {
                 title: 'تأیید انتقال',
-                text: 'شما در حال انتقال {amount} DPX با کارمزد 0.1 DPX به {destination} هستید. آیا می‌خواهید ادامه دهید؟',
+                text: 'شما در حال انتقال {amount} DPX با کارمزد {fee} DPX به {destination} هستید. آیا می‌خواهید ادامه دهید؟',
             },
         }
     },

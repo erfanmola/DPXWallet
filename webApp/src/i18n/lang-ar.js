@@ -97,7 +97,7 @@ const i18n_ar = {
         prompt: {
             verify_transfer: {
                 title: 'تأكيد التحويل',
-                text: 'أنت على وشك نقل {amount} DPX برسوم قدرها 0.1 DPX إلى {destination}. هل ترغب في المتابعة؟',
+                text: 'أنت على وشك نقل {amount} DPX برسوم قدرها {fee} DPX إلى {destination}. هل ترغب في المتابعة؟',
             },
         }
     },

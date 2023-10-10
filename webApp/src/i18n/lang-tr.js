@@ -97,7 +97,7 @@ const i18n_tr = {
         prompt: {
             verify_transfer: {
                 title: 'Transferi Onayla',
-                text: '{amount} DPX ve 0.1 DPX ücret ile {destination} adresine transfer yapmak üzeresiniz. Devam etmek istiyor musunuz?',
+                text: '{amount} DPX ve {fee} DPX ücret ile {destination} adresine transfer yapmak üzeresiniz. Devam etmek istiyor musunuz?',
             },
         }
     },

@@ -97,7 +97,7 @@ const i18n_en = {
         prompt: {
             verify_transfer: {
                 title: 'Verify Transfer',
-                text: 'You are transfering {amount} DPX with 0.1 DPX fee to {destination}. Do you want to proceed?',
+                text: 'You are transfering {amount} DPX with {fee} DPX fee to {destination}. Do you want to proceed?',
             },
         }
     },

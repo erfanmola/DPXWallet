@@ -97,7 +97,7 @@ const i18n_fr = {
         prompt: {
             verify_transfer: {
                 title: 'Vérifier le Transfert',
-                text: 'Vous transférez {amount} DPX avec des frais de 0,1 DPX vers {destination}. Voulez-vous continuer ?',
+                text: 'Vous transférez {amount} DPX avec des frais de {fee} DPX vers {destination}. Voulez-vous continuer ?',
             },
         }
     },

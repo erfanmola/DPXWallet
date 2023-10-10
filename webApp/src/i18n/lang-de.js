@@ -97,7 +97,7 @@ const i18n_de = {
         prompt: {
             verify_transfer: {
                 title: 'Überweisung bestätigen',
-                text: 'Sie überweisen {amount} DPX mit einer Gebühr von 0,1 DPX an {destination}. Möchten Sie fortfahren?',
+                text: 'Sie überweisen {amount} DPX mit einer Gebühr von {fee} DPX an {destination}. Möchten Sie fortfahren?',
             },
         }
     },
