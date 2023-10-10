@@ -200,7 +200,7 @@
             <div class="form-item">
                 <label>{{ $t('wallet.fields.wallet') }}</label>
                 <div>
-                    <input type="text" :placeholder="$t('wallet.fields.wallet')" maxlength="32" minlength="32"
+                    <input type="text" enterkeyhint="done" :placeholder="$t('wallet.fields.wallet')" maxlength="32" minlength="32"
                         v-model="wallet" @keydown="Utils.hideKeyboardOnEnter" />
                     <i @click="ScanQRCode('wallet')" class="icon-maximize"></i>
                 </div>

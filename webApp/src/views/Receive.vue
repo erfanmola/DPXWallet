@@ -109,7 +109,7 @@
                 <div class="form-item">
                     <label>{{ $t('receive.amount') }}</label>
                     <div>
-                        <input type="number" :placeholder="$t('receive.receive_amount')" min="0" max="99999999" minlength="0" maxlength="8" v-model="amount" @keydown="Utils.hideKeyboardOnEnter" @focus="Utils.HandleInputFocus" />
+                        <input type="number" enterkeyhint="done" :placeholder="$t('receive.receive_amount')" min="0" max="99999999" minlength="0" maxlength="8" v-model="amount" @keydown="Utils.hideKeyboardOnEnter" @focus="Utils.HandleInputFocus" />
                     </div>
                 </div>
 
