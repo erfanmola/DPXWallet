@@ -181,19 +181,19 @@ class DPX extends Controller
 
     public static function RevokeSecret(string $wallet, string $secret) {
 
-        if (Wallet::where([ 'wallet' => $wallet, 'secret' => $secret ])->count() > 0) {
+        $wallet = Wallet::where('wallet', $wallet)->first();
+
+        if ($wallet && Hash::check($secret, $wallet->secret)) {
 
             $new_secret = DPX::GenerateRandomHash();
 
-            Wallet::where([ 'wallet' => $wallet, 'secret' => $secret ])->update([ 'secret' => $new_secret ]);
+            Wallet::where([ 'wallet' => $wallet ])->update([ 'secret' => Hash::make($new_secret) ]);
 
             return $new_secret;
 
-        }else{
-         
-            return false;
-
         }
+
+        return false;
 
     }
 
