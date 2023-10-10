@@ -10,7 +10,7 @@ class API extends Controller
 
     public function Generate(Request $request) {
 
-        return DPX::CreateWallet();
+        return $this->Respond(DPX::CreateWallet());
 
     }
 
