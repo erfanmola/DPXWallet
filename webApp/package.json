@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@erfanmola/televue": "^0.1.4",
+    "@erfanmola/televue": "^0.1.5",
     "@twa-dev/sdk": "^6.9.0",
     "pinia": "^2.1.6",
     "qr-code-styling": "^1.6.0-rc.1",
