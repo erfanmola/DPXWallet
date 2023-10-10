@@ -12,7 +12,7 @@ class CreateWalletsTable extends Migration
             $table->id();
             $table->string('wallet', 32);
             $table->string('secret', 64)->nullable();
-            $table->float('balance')->default(1000);
+            $table->float('balance')->default(0);
             $table->float('bonus')->default(0);
             $table->integer('locked')->default(0);
             $table->timestamps();
