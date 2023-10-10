@@ -21,7 +21,7 @@ const Utils = {
         
         try {
 
-            var endpoint_url = import.meta.env.VITE_APP_URL;
+            var endpoint_url = `${ import.meta.env.VITE_APP_URL.toString().replace(/\/+$/, '') }/api`;
 
             let data = { 'method': method };
 
