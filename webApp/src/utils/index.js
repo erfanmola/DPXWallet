@@ -21,7 +21,7 @@ const Utils = {
         
         try {
 
-            var endpoint_url = "https://dpx.developix.ir/api";
+            var endpoint_url = import.meta.env.VITE_APP_URL;
 
             let data = { 'method': method };
 
