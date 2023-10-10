@@ -19,6 +19,18 @@ If you deploy manually and oldSchool way, you can copy the `api/.env.example` to
 ### `APP_URL`
 This variable is Laravel-specific and is used to specify the url that backend is deployed at.
 
+### Database
+We use a MySQL database which requires you to fill these variables that specify the credentials and informations of the MySQL server and database.
+
+```shell
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=
+DB_USERNAME=
+DB_PASSWORD=
+```
+
 ## App
 
 ### `FEE`

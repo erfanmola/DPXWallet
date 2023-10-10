@@ -23,6 +23,18 @@ At this step, we need to install our project's dependencies. We use [Composer](h
 composer install
 ```
 
+### Migrating Database
+
+Our database structure is stored as Laravel migrations, so we need to run our migrations to create the tables.
+
+```shell
+php artisan migrate
+```
+
+:::warning
+This step requires correct setup of [Environment Variables](/environment-variables), otherwise you will face errors.
+:::
+
 ### Serving the project
 
 You can serve the project by running the command below:
@@ -30,9 +42,6 @@ You can serve the project by running the command below:
 ```shell
 php artisan serve
 ```
-:::warning
-This step requires correct setup of [Environment Variables](/environment-variables), otherwise you will face errors.
-:::
 
 ::: tip
 The project is fully compatible with [Laravel Octane](https://laravel.com/docs/10.x/octane) and we recommend using it.

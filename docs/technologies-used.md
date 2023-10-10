@@ -50,5 +50,7 @@ We use [@twa-dev/sdk](https://github.com/twa-dev/SDK) as a replacement for the l
 Our aim for the backend side of the project is to provide a basic CRUD-like API without making it complex.
 
 ### Laravel (PHP)
-We used [Laravel](https://laravel.com/) as our backend API, it's completely hooked-up and compatible with [Laravel Octane](https://laravel.com/docs/10.x/octane) to be used with [OpenSwoole](https://openswoole.com/) or [Roadrunner](https://roadrunner.dev/) for the most efficency and performance.
+We use [Laravel](https://laravel.com/) as our backend API, it's completely hooked-up and compatible with [Laravel Octane](https://laravel.com/docs/10.x/octane) to be used with [OpenSwoole](https://openswoole.com/) or [Roadrunner](https://roadrunner.dev/) for the most efficency and performance.
 
+### MySQL
+We use [MySQL](https://www.mysql.com/) as our database backend, but since we have migration files, we are not limited to MySQL, so other options like SQLite could be used too.
