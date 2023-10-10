@@ -94,6 +94,7 @@
 </template>
 
 <style lang="scss">
+
     #section-login {
         display: flex;
         flex-direction: column;
@@ -143,4 +144,5 @@
             }
         }
     }
+    
 </style>

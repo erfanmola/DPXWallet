@@ -243,6 +243,7 @@
 </template>
 
 <style lang="scss">
+
     #section-wallet {
         display: flex;
         flex-direction: column;
@@ -272,4 +273,5 @@
             }
         }
     }
+    
 </style>

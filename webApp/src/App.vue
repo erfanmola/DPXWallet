@@ -1,6 +1,5 @@
 <script setup>
-    import { ref, onMounted } from 'vue';
-    import { useRouter } from 'vue-router';
+    import { onMounted } from 'vue';
 
     import WebApp from '@twa-dev/sdk';
 
@@ -10,32 +9,17 @@
     import { AppearanceProvider, LocaleProvider, AuthProvider } from '@erfanmola/televue';
     import '@erfanmola/televue/style.css';
 
-    // Check if we are in dev mode
-    const devMode = (import.meta.env.MODE === 'development') && true;
-
     // Retrive VITE_HEX_HMAC_SIGNATURE environment variable if available
     const hex_hmac_signature = import.meta.env.VITE_HEX_HMAC_SIGNATURE;
 
     // Try to retrieve the saved `locale` from LocalStorage if available
     const locale = localStorage.getItem('dpxwallet_locale');
 
-    const slideTransition = ref('slide-left');
-
-    const router = useRouter();
-
     onMounted(() => {
 
+        // Preload Audio files that we are going to use
         Utils.PreLoadAudio('Success.mp3');
         Utils.PreLoadAudio('Failed.mp3');
-
-    });
-
-    router.afterEach((to, from) => {
-
-        const toPath = to.path.split('/').filter((item) => item.length).length;
-        const fromPath = from.path.split('/').filter((item) => item.length).length;
-
-        slideTransition.value = (toPath) < (fromPath) ? 'slide-right' : 'slide-left';
 
     });
 
@@ -57,7 +41,7 @@
             </LocaleProvider>
         </AppearanceProvider>
 
-        <template #unauthorized>
+        <template #unauthorized v-if="hex_hmac_signature">
             Your client is not authorized, please use this WebApp from a valid Telegram Client
         </template>
     </component>

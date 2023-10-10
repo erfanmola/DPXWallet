@@ -8,6 +8,7 @@
     import Utils from '../utils';
 
     import { useRankStore } from '../stores/useRanks';
+    
     import badge from '../components/badge.vue';
     import Header from '../components/Header.vue';
 

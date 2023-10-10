@@ -5,10 +5,12 @@ let Audios = {};
 
 const Utils = {
     
+    // Wrapper for Toastify function
     Toast: (text, duration = 2000) => { 
         Toastify({text: text, duration: duration, gravity: 'top', position: 'left', style: {background: 'var(--tg-theme-text-color)', color: 'var(--tg-theme-bg-color)'}}).showToast(); 
     },
 
+    // Send request to DPX API & return reponse
     DPXSendRequest: async (endpoint = '/', data = [], method = 'POST', i18n = null) => {
 
         const FD = new FormData();
@@ -72,6 +74,7 @@ const Utils = {
 
     },
 
+    // Preload audio file
     PreLoadAudio: (name) => {
             
         if (Audios[name] === undefined) {
@@ -82,12 +85,14 @@ const Utils = {
 
     },
 
+    // Play an audio file
     PlayAudio: (name) => {
 
         Audios[name].play();
 
     },
 
+    // a prefered way of showing Telegram WebApp prompts and handling it's callback
     Prompt: (title = null, text, options) => {
 
         if (WebApp.isVersionAtLeast('6.2')) {
@@ -141,6 +146,7 @@ const Utils = {
 
     },
 
+    // Scan QRCode if supported
     ScanQRCode: (text, onReceive) => {
 
         if (WebApp.isVersionAtLeast('6.4')) {
@@ -172,22 +178,10 @@ const Utils = {
 
     },
 
-    readTextFromClipboard: (onPaste) => {
-
-        if (WebApp.isVersionAtLeast('6.4')) {
-
-            WebApp.readTextFromClipboard(onPaste);
-
-        }else{
-
-            Utils.Toast('Unsupported');
-
-        }
-
-    },
-
+    // Hide keyboard when user clicks enter
     hideKeyboardOnEnter: (event) => { if (event.keyCode === 13) { event.target.blur(); } },
 
+    // Copy text to clipboard
     copyTextToClipboard: (text) => {
 
         if (!navigator.clipboard) {
@@ -220,6 +214,7 @@ const Utils = {
     
     },
 
+    // Get wallet/secret from LocalStorage
     GetWallet(param = null) {
 
         let info = window.localStorage.getItem(`wallet_user_${ WebApp.initDataUnsafe.user.id }`);
@@ -244,6 +239,7 @@ const Utils = {
 
     },
 
+    // Set wallet/secret to LocalStorage
     SetWallet(wallet = null, secret = null) {
 
         if (wallet === null) {
@@ -263,6 +259,7 @@ const Utils = {
 
     },
 
+    // a hacky trick to fix mispositioning of UI elements when keyboard opens
     HandleInputFocus: () => {
 
         window.scrollTo(0, 0);

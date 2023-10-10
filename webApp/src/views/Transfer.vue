@@ -1,5 +1,5 @@
 <script setup>
-    import { inject, ref, onMounted } from 'vue';
+    import { inject, ref } from 'vue';
     import { useI18n } from "vue-i18n";
     import { useRouter, useRoute } from 'vue-router';
 
@@ -160,6 +160,7 @@
 </template>
 
 <style lang="scss">
+
     #section-transfer {
         display: flex;
         flex-direction: column;
@@ -183,4 +184,5 @@
             }
         }
     }
+    
 </style>
