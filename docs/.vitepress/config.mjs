@@ -41,6 +41,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'API',
+        items: [
+          { text: 'DPX API Guide', link: '/dpx-api' },
+          { text: 'DPXCLI', link: 'https://github.com/Developix-ir/DPXCLI' }
+        ]
+      },
+      {
         text: 'TeleVue',
         items: [
           { text: 'TeleVue Github', link: 'https://github.com/erfanmola/TeleVue' },
