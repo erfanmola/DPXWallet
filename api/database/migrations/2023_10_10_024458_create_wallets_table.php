@@ -11,7 +11,7 @@ class CreateWalletsTable extends Migration
         Schema::create('wallets', function (Blueprint $table) {
             $table->id();
             $table->string('wallet', 32);
-            $table->string('secret', 32)->nullable();
+            $table->string('secret', 64)->nullable();
             $table->float('balance')->default(1000);
             $table->float('bonus')->default(0);
             $table->integer('locked')->default(0);
