@@ -62,7 +62,7 @@
 
     const Submit = async () => {
 
-        Utils.Prompt(i18nLocale.t('transfer.prompt.verify_transfer.title'), i18nLocale.t('transfer.prompt.verify_transfer.text', { amount: amount.value, destination: destination.value, fee: (import.meta.env.VITE_FEE || (0.1)) }), [
+        Utils.Prompt(i18nLocale.t('transfer.prompt.verify_transfer.title'), i18nLocale.t('transfer.prompt.verify_transfer.text', { amount: amount.value, destination: destination.value, fee: (import.meta.env.VITE_FEE || (0.2)) }), [
             {
                 text: i18nLocale.t('general.no'),
                 type: "default",
