@@ -7,7 +7,7 @@ hero:
   text: "Documentations & Setup Guide"
   tagline: Feature-Rich demonstration of a dummy Wallet app built in Telegram
   image:
-    src: https://raw.githubusercontent.com/erfanmola/SimpList/master/docs/SimpList.png
+    src: https://raw.githubusercontent.com/erfanmola/DPXWallet/master/docs/DPXWallet.png
     alt: DPXWallet
   actions:
     - theme: brand
