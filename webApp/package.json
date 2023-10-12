@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@erfanmola/televue": "^0.1.5",
+    "@erfanmola/televue": "^0.1.6",
     "@twa-dev/sdk": "^6.9.0",
     "pinia": "^2.1.6",
     "qr-code-styling": "^1.6.0-rc.1",
@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.4.0",
-    "sass": "^1.69.1",
+    "sass": "^1.69.3",
     "vite": "^4.4.11",
     "vite-svg-loader": "^4.0.0"
   }
