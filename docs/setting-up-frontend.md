@@ -9,6 +9,10 @@ cd webApp
 
 ## Installing Dependencies
 
+:::danger
+I am very sorry to inform this, But I just accidentally `unpublished` the `@erfanmola/televue@0.1.5` package from npm, there is no way to restore it, sorry for this inconvenience. Please change the `0.1.5` to `0.1.6` in `webApp/package.json` as I republished it, otherwise you will face error when trying `npm install`. 
+:::
+
 At this step, we need to install our project's dependencies. We use [NPM](https://www.npmjs.com/) as our package manager, but you can use any other tools (yarn, pnpm, ...).
 
 ```shell
